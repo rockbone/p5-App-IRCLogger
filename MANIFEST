@@ -1,0 +1,9 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/IRC-Logger.t
+lib/IRC/Logger.pm
+bot/logger
+bot/config.yaml
+sample.pit

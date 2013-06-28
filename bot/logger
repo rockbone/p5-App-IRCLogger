@@ -1,0 +1,49 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+use utf8;
+
+use App::Daemon qw/daemonize/;
+use IRC::Logger;
+use Encode;
+use Time::Piece;
+use Getopt::Long ();
+use Pod::Usage qw(pod2usage);
+
+my $p = Getopt::Long::Parser->new(
+    config => [qw(posix_default no_ignore_case auto_help)]
+);
+$p->getoptions(
+    \my %opt,
+    'help', 'usage',
+);
+pod2usage(0) if $opt{help} || $opt{usage};
+
+daemonize();
+my $logger = IRC::Logger->new( "config.yaml" );
+
+$logger->run;
+
+$logger->finish;
+
+exit;
+
+=pod
+
+=head1 NAME
+
+
+=head1 SYNOPSIS
+
+
+=head1 OPTIONS
+
+=over
+
+=head1 COPYRIGHT AND LICENSE
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+
+=cut

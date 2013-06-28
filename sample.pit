@@ -1,0 +1,12 @@
+--- 
+"irc_foo": 
+  "charset": 'utf8'
+  "password": 'XXXXX'
+  "port": 6667
+  "server": 'irc.foo.net'
+  "ssl": 1
+"irc_bar": 
+  "charset": 'utf8'
+  "password": 'XXXXX'
+  "port": 6668
+  "server": 'irc.bar.net'

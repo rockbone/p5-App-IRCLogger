@@ -1,0 +1,6 @@
+Revision history for Perl extension IRC::Logger.
+
+0.01  Sat Jun 29 01:06:38 2013
+	- original version; created by h2xs 1.23 with options
+		-X IRC::Logger
+

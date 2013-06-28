@@ -1,0 +1,15 @@
+---
+global:
+  file_encoding: utf8
+  logdir: /home/irc/ircbot/logger/log
+  format: '[%Y/%m/%d %H:%M:%S] %n :%s'
+profile:
+  nick: logger
+  real: logger@myserver.net
+servers:
+  foo:
+    - channel1
+    - channel2
+  bar:
+    - channel1
+    - channel2
